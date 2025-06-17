@@ -1,0 +1,47 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    max-height: 80px;
+    height: 100%;
+    border-bottom: 4px solid #474787;
+    color: #fff;
+
+    .header__imagem{ 
+        padding-left: 20px;
+
+        &__item {
+            max-width: 40px;
+            width: 100%;
+        }
+    }
+
+    .header__lista{
+        list-style: none;
+        padding-right: 20px;
+        display: flex;
+        
+        &__links {          
+            &__botao {
+                text-decoration: none;
+                color: #f7f1e3;
+                border: 1px solid #f7f1e3;
+                border-radius: 8%;
+                padding: 12px;
+                font-weight: bold;
+
+                &--is-active {
+                    background-color:#218c74;
+                }
+            }
+        }
+        
+        &__lingua {
+            margin-right: 30px;
+            color: #f7f1e3;
+        }
+    }
+
+
+
+}
+

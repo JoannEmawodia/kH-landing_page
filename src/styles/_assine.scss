@@ -1,0 +1,34 @@
+.assine{
+    display: flex;
+    margin-top: 40px;
+    padding: 60px;
+
+    &__img{
+        &__item{
+            max-width: 800px;
+            width: 100%;
+            border-radius: 20%;      
+        }
+    }
+
+    &__conteudo{
+        margin-left: 40px;
+        text-align: center;
+
+        &__titulo{
+            font-size: 50px;
+        }
+
+        &__texto{
+            font-size: 20px;
+        }
+
+        &__botao{
+            border: 1px solid #f7f1e3;
+            border-radius: 8%;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    }
+}

@@ -1,3 +1,21 @@
-body {
-    background-color: #fff;
+@use 'cabecalho';
+@use 'hero';
+@use 'assine';
+@use 'personagens';
+@use 'grupos';
+@use 'faq';
+@use 'footer';
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/Kingdom_Hearts_Font.ttf);
+    font-weight: 400;
+}
+
+* {
+    background-color: #2c2c54;
+    color:#f7f1e3;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }

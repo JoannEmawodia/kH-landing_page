@@ -8,22 +8,142 @@
 </head>
 <body>
     <header>
-        <picture>
-            <img src="./src/imagens/Kingdom_Hearts_logo.svg.png" alt="Kingdom Hearts logo">
+        <picture class="header__imagem" >
+            <img class="header__imagem__item" src="./src/imagens/Kingdom_Hearts_logo.svg.png" alt="Kingdom Hearts logo">
         </picture>
         <div>
-            
-            <ul>
-                <select>
+            <ul class="header__lista">
+                <select class="header__lista__lingua">
                     <option selected>Português</option>
                     <option>English</option>
-                </select>
-                <li>
-                    <a href="#">Cadastrar</a>
-                    <a href="#">Entrar</a>
+                </select>                
+                <li class="header__lista__links">
+                    <a class="header__lista__links__botao" href="#">Cadastrar</a>
+                    <a class="header__lista__links__botao header__lista__links__botao--is-active" href="#">Entrar</a>
                 </li>
             </ul>
         </div>
     </header>
+    <section class="hero">
+        <img class="hero__img" src="./src/imagens/582236.jpg" alt="">
+        <div class="hero__conteudo">
+            <h1 class="hero__conteudo__titulo" >Portal <br /> Kingdom Hearts</h1>
+        </div>
+    </section>
+    <section class="assine">
+        <picture class="assine__img">
+            <img class="assine__img__item" src="./src/imagens/kingdom-hearts-the-story-so-far-part-3-let-s-get-down-to-dizness-bagm3juwtw50vqbd.jpg" alt="">
+        </picture>
+        <div class="assine__conteudo">
+            <h2 class="assine__conteudo__titulo">Assine <br /> e se informe</h2>
+            <p class="assine__conteudo__texto"> Assine e leia as principais noticias sobre as produções e bastidores do desenvolvimento do jogo</p>
+            <button class="assine__conteudo__botao" type="button">Assine</button>
+        </div>
+    </section>
+    <section class="personagens">
+        <h2 class="personagens__titulo"> Curiosidades sobre seus personagens favoritos</h2>
+        <ul class="personagens__lista">
+            <div class="personagens__lista__container">
+                <li class="personagens__lista__item">
+                <img class="personagens__lista__item__img" src="./src/imagens/personagens/sora.webp" alt="">
+                <p class="personagens__lista__item__texto">Sora</p>
+                </li>
+            </div>
+            <div class="personagens__lista__container">
+                <li class="personagens__lista__item">
+                <img class="personagens__lista__item__img" src="./src/imagens/personagens/riku.webp" alt="">
+                <p class="personagens__lista__item__texto">RIku</p>
+                </li>
+            </div>
+            <div class="personagens__lista__container">
+                <li class="personagens__lista__item">
+                <img class="personagens__lista__item__img" src="./src/imagens/personagens/kairi.webp" alt="">
+                <p class="personagens__lista__item__texto">Kairi</p>
+                </li>
+            </div>
+            <div class="personagens__lista__container ">
+                <li class="personagens__lista__item">
+                <img class="personagens__lista__item__img personagens__lista__item__img--is-small" src="./src/imagens/personagens/agora sim.webp" alt="">
+                <p class="personagens__lista__item__texto">Mickey</p>
+                </li>
+            </div>
+            <div class="personagens__lista__container">
+                <li class="personagens__lista__item">
+                <img class="personagens__lista__item__img personagens__lista__item__img--is-small" src="./src/imagens/personagens/pateta.webp" alt="">
+                <p class="personagens__lista__item__texto">Pateta</p>
+                </li>
+            </div>
+            <div class="personagens__lista__container">
+                <li class="personagens__lista__item">
+                <img class="personagens__lista__item__img personagens__lista__item__img--is-small" src="./src/imagens/personagens/donald.png" alt="">
+                <p class="personagens__lista__item__texto">Donald</p>
+                </li>
+            </div>
+        </ul>
+    </section>
+    <section class="grupos">
+        <h2 class="grupos__title">Grupos</h2>
+        <nav class="grupos__navegacao">
+            <button data-tab-button="princesas" class="grupos__navegacao__botao grupos__navegacao__botao--is-active" type="button"> Princesa </button>
+            <button data-tab-button="herois" class="grupos__navegacao__botao" type="button"> Herois</button>
+            <button data-tab-button="viloes" class="grupos__navegacao__botao" type="button"> Vilões</button>
+            <button data-tab-button="final__fantasy" class="grupos__navegacao__botao" type="button"> Final Fantasy</button>
+        </nav>
+        <ul  data-tab-id="princesas" class=" grupos__lista grupos__lista--is-active">
+            <li class="grupos__lista__item">
+                <img class="grupos__lista__item__img" src="./src/imagens/Kingdom-Of-Hearts-Princesses-Of-Heart.avif" alt="">
+            </li>
+        </ul>
+        <ul data-tab-id="herois" class="grupos__lista">
+            <li class="grupos__lista__item">
+                <img class="grupos__lista__item__img" src="./src/imagens/herois.webp" alt="">
+            </li>
+        </ul>
+        <ul data-tab-id="viloes" class="grupos__lista">
+            <li class="grupos__lista__item">
+                <img class="grupos__lista__item__img" src="./src/imagens/1600px-Real_Organization_XIII_KHIII.webp" alt="">
+            </li>
+        </ul>
+        <ul data-tab-id="final__fantasy" class="grupos__lista">
+            <li class="grupos__lista__item">
+                <img class="grupos__lista__item__img" src="./src/imagens/daytng5-c3104f0e-0557-4d1c-921c-2b6633557987.jpg" alt="">
+            </li>
+        </ul>
+    </section>
+    <section class="faq">
+        <h2 class="title">Perguntas frequentes</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Qual é a história?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    A resposta da pergunta
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Quantos jogos tem?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    A resposta da pergunta
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Terá mais jogos?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    A resposta da pergunta
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <p class="footer__texto">Seu portal de noticias de Kingdom Hearts</p>
+        <img class="footer__img" src="./src/imagens/kingdom-hearts-logo-png_seeklogo-78660.png" alt="">
+    </footer>
+
+    <script src="./dist/script/main.js"></script>
 </body>
 </html>

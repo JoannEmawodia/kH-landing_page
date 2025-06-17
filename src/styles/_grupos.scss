@@ -1,0 +1,39 @@
+.grupos{
+    &__title{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    &__navegacao{
+        display: flex;
+
+        &__botao{
+            &--is-active{
+                background-color: #fff; /* ou qualquer estilo que destaque */
+                color: #000;
+            }
+            border: none;
+            border-bottom: 1px solid #f7f1e3;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 30px;
+        }
+    }
+
+    &__lista{
+        display: none;
+
+        &--is-active{
+            display: block;
+        }
+        &__item{
+            &__img{
+                display: flex;
+                max-width: 800px;
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
