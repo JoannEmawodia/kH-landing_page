@@ -1,3 +1,5 @@
+@use 'variaveis';
+
 .grupos{
     &__title{
         font-size: 20px;
@@ -28,11 +30,18 @@
             display: block;
         }
         &__item{
+            display: flex;
             &__img{
-                display: flex;
                 max-width: 800px;
                 width: 100%;
-                margin: 0 auto;
+                margin-left: 30px;
+                margin-right: 20px;
+                display: block;
+                -webkit-mask-image: radial-gradient(circle, black 60%, transparent 100%);
+                mask-image: radial-gradient(circle, black 60%, transparent 100%);
+            }
+            &__texto{
+                font-size: 20px;
             }
         }
     }

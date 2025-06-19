@@ -1,3 +1,4 @@
+@use 'variaveis';
 @use 'cabecalho';
 @use 'hero';
 @use 'assine';
@@ -7,14 +8,14 @@
 @use 'footer';
 
 @font-face {
-    font-family: Avenir;
-    src: url(../../assets/Kingdom_Hearts_Font.ttf);
+    font-family: Press-start;
+    src: url(../../assets/PressStart2P-Regular.ttf);
     font-weight: 400;
 }
 
 * {
-    background-color: #2c2c54;
-    color:#f7f1e3;
+    background-color: #f5f6fa;
+    color:#2f3640;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;

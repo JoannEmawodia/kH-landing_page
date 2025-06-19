@@ -1,3 +1,5 @@
+@use 'variaveis';
+
 .assine{
     display: flex;
     margin-top: 40px;
@@ -5,9 +7,12 @@
 
     &__img{
         &__item{
-            max-width: 800px;
+            max-width: variaveis.$imgWidth;
             width: 100%;
-            border-radius: 20%;      
+            border: 2px solid variaveis.$corTitulo;
+            display: block;
+            -webkit-mask-image: radial-gradient(circle, variaveis.$corFundo 100%, transparent 100%);
+            mask-image: radial-gradient(circle, variaveis.$corFundo 10%, transparent 100%);
         }
     }
 
@@ -16,19 +21,27 @@
         text-align: center;
 
         &__titulo{
-            font-size: 50px;
+            font-size: variaveis.$fonteTitulo;
+            color: variaveis.$corTitulo;
         }
 
         &__texto{
-            font-size: 20px;
+            font-size: variaveis.$fonteTexto;
         }
 
         &__botao{
-            border: 1px solid #f7f1e3;
-            border-radius: 8%;
-            padding: 20px;
-            font-weight: bold;
+            border: 1px solid variaveis.$corTitulo;
+            border-radius: 6%;
+            padding: 10px 26px;
+            font-weight: bolder;
             font-size: 20px;
+            background-color: variaveis.$corBotao;
+
+            &:hover{
+                cursor: pointer;
+                background-color: variaveis.$corTitulo;
+                color: variaveis.$corFundo;
+            }
         }
     }
 }

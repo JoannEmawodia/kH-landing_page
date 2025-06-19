@@ -1,10 +1,16 @@
+@use 'variaveis';
+
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     max-height: 80px;
     height: 100%;
-    border-bottom: 4px solid #474787;
-    color: #fff;
+    border-bottom: 4px solid variaveis.$corTitulo;
+    color: variaveis.$corTexto;
+    background-color: variaveis.$corFundo;
 
     .header__imagem{ 
         padding-left: 20px;
@@ -23,21 +29,29 @@ header {
         &__links {          
             &__botao {
                 text-decoration: none;
-                color: #f7f1e3;
-                border: 1px solid #f7f1e3;
-                border-radius: 8%;
+                color: variaveis.$corTexto;
+                border: 1px solid variaveis.$corTitulo;
+                background-color: variaveis.$corBotao;
+                border-radius: 6%;
                 padding: 12px;
                 font-weight: bold;
 
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+
                 &--is-active {
-                    background-color:#218c74;
+                    background-color: variaveis.$corTitulo;
+                    color: variaveis.$corFundo;
                 }
             }
         }
         
         &__lingua {
             margin-right: 30px;
-            color: #f7f1e3;
+            color: variaveis.$corTexto;
+            padding: 6px;
         }
     }
 
