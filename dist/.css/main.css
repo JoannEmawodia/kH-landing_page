@@ -111,11 +111,12 @@ header .header__lista__lingua {
   padding-top: 60px;
   padding-left: 60px;
   padding-right: 60px;
+  height: 890px;
 }
 .personagens__titulo {
   text-align: center;
   color: #273c75;
-  font-size: 50px;
+  font-size: 28px;
 }
 .personagens__lista {
   display: grid;
@@ -149,6 +150,9 @@ header .header__lista__lingua {
   font-size: 16px;
 }
 
+.grupos {
+  margin-top: 60px;
+}
 .grupos__title {
   font-size: 20px;
   text-align: center;
@@ -158,15 +162,15 @@ header .header__lista__lingua {
 }
 .grupos__navegacao__botao {
   border: none;
-  border-bottom: 1px solid #f7f1e3;
+  border-bottom: 2px solid #dcdde1;
   padding: 20px;
   font-weight: bold;
   font-size: 20px;
   margin-left: 30px;
 }
 .grupos__navegacao__botao--is-active {
-  background-color: #fff; /* ou qualquer estilo que destaque */
-  color: #000;
+  background-color: #273c75;
+  color: #f5f6fa;
 }
 .grupos__lista {
   display: none;
@@ -178,22 +182,37 @@ header .header__lista__lingua {
   display: flex;
 }
 .grupos__lista__item__img {
+  border: 2px solid #273c75;
   max-width: 800px;
   width: 100%;
   margin-left: 30px;
-  margin-right: 20px;
+  margin-right: 30px;
   display: block;
   -webkit-mask-image: radial-gradient(circle, black 60%, transparent 100%);
   mask-image: radial-gradient(circle, black 60%, transparent 100%);
 }
 .grupos__lista__item__texto {
-  font-size: 20px;
+  font-size: 18px;
 }
 
+.title {
+  color: #273c75;
+  font-size: 28px;
+}
+
+.faq {
+  margin-top: 60px;
+  margin-left: 30px;
+}
+.faq__questions__item {
+  list-style: none;
+}
 .faq__questions__item__question {
-  color: #fff;
+  color: #2f3640;
+  border: 1px solid #273c75;
   font-size: 20px;
-  padding: 24px;
+  padding: 20px;
+  margin-bottom: 5px;
   display: block;
   cursor: pointer;
   position: relative;
@@ -224,6 +243,7 @@ header .header__lista__lingua {
 }
 
 .footer {
+  margin-top: 60px;
   display: flex;
   justify-content: space-between;
 }

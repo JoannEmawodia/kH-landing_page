@@ -1,15 +1,27 @@
 @use 'variaveis';
 
+.title{
+    color: variaveis.$corTitulo;
+    font-size: variaveis.$fonteTitulo2;
+}
+
 .faq{
+    margin-top: 60px;
+    margin-left: 30px;
+
     &__questions{
         &__item{
+            list-style: none;
             &__question{
-                color: #fff;
-                font-size: 20px;
-                padding: 24px;
+                color: variaveis.$corTexto;
+                border: 1px solid variaveis.$corTitulo;
+                font-size: variaveis.$fonteTexto;
+                padding: 20px;
+                margin-bottom: 5px;
                 display: block;
                 cursor: pointer;
                 position: relative;
+                
 
                 &::after {
                     content: '+';

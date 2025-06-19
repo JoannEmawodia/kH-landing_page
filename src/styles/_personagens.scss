@@ -5,11 +5,12 @@
     padding-top: 60px;
     padding-left: 60px;
     padding-right: 60px;
+    height: 890px;
 
     &__titulo{
         text-align: center;
         color: variaveis.$corTitulo;
-        font-size: variaveis.$fonteTitulo;
+        font-size: variaveis.$fonteTitulo2;
     }
 
     &__lista{

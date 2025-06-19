@@ -1,6 +1,8 @@
 @use 'variaveis';
 
 .grupos{
+    margin-top: 60px;
+
     &__title{
         font-size: 20px;
         text-align: center;
@@ -11,14 +13,14 @@
 
         &__botao{
             &--is-active{
-                background-color: #fff; /* ou qualquer estilo que destaque */
-                color: #000;
+                background-color: variaveis.$corTitulo;
+                color: variaveis.$corFundo;
             }
             border: none;
-            border-bottom: 1px solid #f7f1e3;
+            border-bottom: 2px solid variaveis.$corBotao;
             padding: 20px;
             font-weight: bold;
-            font-size: 20px;
+            font-size: variaveis.$fonteTexto;
             margin-left: 30px;
         }
     }
@@ -32,16 +34,17 @@
         &__item{
             display: flex;
             &__img{
-                max-width: 800px;
+                border: 2px solid variaveis.$corTitulo;
+                max-width: variaveis.$imgWidth;
                 width: 100%;
                 margin-left: 30px;
-                margin-right: 20px;
+                margin-right: 30px;
                 display: block;
                 -webkit-mask-image: radial-gradient(circle, black 60%, transparent 100%);
                 mask-image: radial-gradient(circle, black 60%, transparent 100%);
             }
             &__texto{
-                font-size: 20px;
+                font-size: 18px;
             }
         }
     }
