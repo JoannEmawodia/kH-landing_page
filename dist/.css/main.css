@@ -31,13 +31,13 @@ header .header__lista__links__botao {
   padding: 12px;
   font-weight: bold;
 }
+header .header__lista__links__botao--is-active {
+  color: #273c75;
+  color: #f5f6fa;
+}
 header .header__lista__links__botao:hover {
   cursor: pointer;
   opacity: 0.7;
-}
-header .header__lista__links__botao--is-active {
-  background-color: #273c75;
-  color: #f5f6fa;
 }
 header .header__lista__lingua {
   margin-right: 30px;

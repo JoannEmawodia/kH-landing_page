@@ -12,16 +12,18 @@
         display: flex;
 
         &__botao{
-            &--is-active{
-                background-color: variaveis.$corTitulo;
-                color: variaveis.$corFundo;
-            }
+            
             border: none;
             border-bottom: 2px solid variaveis.$corBotao;
             padding: 20px;
             font-weight: bold;
             font-size: variaveis.$fonteTexto;
             margin-left: 30px;
+            
+            &--is-active{
+                background-color: variaveis.$corTitulo;
+                color: variaveis.$corFundo;
+            }
         }
     }
 
