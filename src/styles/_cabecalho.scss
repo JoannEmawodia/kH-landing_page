@@ -35,11 +35,12 @@ header {
                 border-radius: 6%;
                 padding: 12px;
                 font-weight: bold;
+                
                 &--is-active {
                     color: variaveis.$corTitulo;
                     color: variaveis.$corFundo;
                 }
-                
+
                 &:hover{
                     cursor: pointer;
                     opacity: 0.7;
