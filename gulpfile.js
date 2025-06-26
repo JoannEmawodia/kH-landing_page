@@ -23,7 +23,7 @@ function scripts (){
 }
 
 function html (){
-    return gulp.src('../Projeto 5/*.html')
+    return gulp.src('./src/*.html')
         .pipe(gulp.dest('./dist'));
 }
 
