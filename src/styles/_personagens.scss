@@ -52,4 +52,36 @@
         }
     }
 
+    @media(max-width: 640px){
+        margin: 0 auto;
+        padding-top: 16px;
+
+        &__lista{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 30px;
+        list-style: none;
+
+        &__item{
+            
+            &__img{
+                max-width: 120px;  
+                max-height: 120px;}
+            }
+        }
+
+        &__titulo{
+            font-size: 20px;
+        }
+
+    }
+
+    @media(max-width: 1024px){
+        margin: 0 auto;
+
+        &__titulo{
+            font-size: 20px;
+        }
+
+    }
 }

@@ -58,6 +58,40 @@ header {
     }
 
 
+    @media(max-width: 640px){
+        position:static;
+        border-bottom: none;
+        background-color: none;
+        
+        .header__imagem{
+            display: none;
+        }
 
+        .header__lista{
+            padding: 0;
+
+            &__lingua{
+                display: none;
+            }
+        }
+    }
+
+    @media(max-width: 1024px){
+        position:static;
+        border-bottom: none;
+        background-color: none;
+        
+        .header__imagem{
+            display: none;
+        }
+
+        .header__lista{
+            padding: 0;
+
+            &__lingua{
+                display: none;
+            }
+        }
+    }
 }
 
