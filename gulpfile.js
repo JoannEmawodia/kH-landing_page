@@ -10,8 +10,9 @@ function styles (){
         .pipe(gulp.dest('./dist/styles'));
 }
 
-function images (){
-    return gulp.src('./src/imagens/**/*')
+function images() {
+    return gulp.src('./src/imagens/**/*.{jpg,jpeg,png,webp,svg}')
+        .pipe(imagemin())
         .pipe(gulp.dest('./dist/imagens'));
 }
 
