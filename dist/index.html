@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kingdom Hearts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
@@ -25,10 +28,8 @@
         </div>
     </header>
     <section class="hero">
-        <img class="hero__img" src="./imagens/1345188.jpeg" alt="">
-        <div class="hero__conteudo">
-            <h1 class="hero__conteudo__titulo" >Seu portal de notícias</h1>
-        </div>
+            <h1 class="hero__titulo">Seu Portal de Notícias</h1>
+        
     </section>
     <section class="assine">
         <picture class="assine__img">
@@ -83,40 +84,18 @@
     </section>
     <section class="grupos">
         <nav class="grupos__navegacao">
-            <button data-tab-button="princesas" class="grupos__navegacao__botao grupos__navegacao__botao--is-active" type="button"> Princesa </button>
-            <button data-tab-button="herois" class="grupos__navegacao__botao" type="button"> Herois</button>
+            <button data-tab-button="herois" class="grupos__navegacao__botao grupos__navegacao__botao--is-active" type="button"> Herois</button>
             <button data-tab-button="viloes" class="grupos__navegacao__botao" type="button"> Vilões</button>
             <button data-tab-button="final__fantasy" class="grupos__navegacao__botao" type="button"> Final Fantasy</button>
         </nav>
-        <ul  data-tab-id="princesas" class=" grupos__lista grupos__lista--is-active">
-            <li class="grupos__lista__item">
-                <img class="grupos__lista__item__img" src="./imagens/kh_princess.avif" alt="">
-                <div>
-                    <p class="grupos__lista__item__texto">Em Kingdom Hearts, as Princesas do Coração são sete personagens femininas com corações de pura luz, desprovidos de escuridão. Elas são: Branca de Neve, Cinderela, Aurora, Ariel, Bela, Jasmine e Kairi. A reunião dessas princesas permite a abertura da Fechadura Final, que leva a Kingdom Hearts e ao controle do universo.</p>
-                    <p class="grupos__lista__item__texto">No jogo, as Princesas do Coração são importantes por sua conexão com a luz e a escuridão. Elas são essenciais para o enredo, pois seus corações puros são necessários para selar as fechaduras dos mundos e impedir que os Heartless os dominem. </p>
-                    <p class="grupos__lista__item__texto">As princesas apresentadas em Kingdom Hearts são: </p>
-                    <p class="grupos__lista__item__texto">
-                    <b>Branca de Neve:</b> Da Floresta dos Sete Anões.<br />
-                    <b>Cinderela:</b> Do Castelo dos Sonhos.<br />
-                    <b>Aurora:</b> Do Domínio Encantado.<br />
-                    <b>Ariel:</b> Do Mundo Submarino.<br />
-                    <b>Bela:</b> Do Castelo da Fera.<br />
-                    <b>Jasmine:</b> De Agrabah.<br />
-                    <b>Kairi:</b> Amiga de Sora e Riku, com quem compartilha o título de portadora da Keyblade.<br />
-                </p>
-                <p class="grupos__lista__item__texto">Além dessas sete princesas, existem as "Novas Sete Luzes", que surgem em Kingdom Hearts III como uma espécie de backup, caso as originais não sejam encontradas. Essas novas luzes incluem Kairi, Rapunzel, Anna e Elsa. </p>
-
-                </div>
-            </li>
-        </ul>
-        <ul data-tab-id="herois" class="grupos__lista">
+        <ul data-tab-id="herois" class="grupos__lista grupos__lista--is-active">
             <li class="grupos__lista__item">
                 <img class="grupos__lista__item__img" src="./imagens/herois.webp" alt="">
-                <div>
-                    <p class="grupos__lista__item__texto">
+                <div class="grupos__lista__item__texto">
+                    <p>
                     Os heróis de Kingdom Hearts incluem principalmente Sora, Riku, Kairi, e personagens da Disney como Pateta e Donald, além de outros portadores da Keyblade e aliados. 
                     Personagens principais:<br /> </p>
-                    <p class="grupos__lista__item__texto">
+                    <p>
                     <b>Sora:</b> O protagonista principal, um jovem escolhido pela Keyblade para combater as trevas e proteger os mundos. <br />
                     <b>Riku:</b> Amigo de infância de Sora, que inicialmente sucumbe à escuridão, mas eventualmente se torna um forte aliado. <br />
                     <b>Kairi:</b> Amiga de Sora e Riku, que também possui uma conexão com a Keyblade e desempenha um papel crucial na história. <br />
@@ -124,7 +103,7 @@
                     <b>Donald:</b> O mago da corte do Rei Mickey, que acompanha Sora e Pateta. <br />
                     <b>Pateta: </b>O capitão da guarda real, que também se junta a Sora e Donald. <br />
                     <b>Aqua, Terra e Ventus:</b> Protagonistas de Kingdom Hearts Birth by Sleep, com habilidades distintas e papéis importantes na história. <br /></p>
-                    <p class="grupos__lista__item__texto">Outros heróis e aliados: <br />
+                    <p>Outros heróis e aliados: <br />
                     <b>Hércules:</b> Um herói do Olimpo que ajuda Sora em sua aventura. <br />
                     <b>Roxas:</b> A "NoBody" de Sora, que tem um papel significativo na história. <br />
                     <b>Axel/Lea:</b> Um membro da Organização XIII que se torna um aliado de Sora. <br />
@@ -137,8 +116,8 @@
         <ul data-tab-id="viloes" class="grupos__lista">
             <li class="grupos__lista__item">
                 <img class="grupos__lista__item__img" src="./imagens/organization.webp" alt="">
-                <div>
-                    <p class="grupos__lista__item__texto">A série Kingdom Hearts é conhecida por sua narrativa complexa e por apresentar uma variedade de vilões que desempenham papéis cruciais ao longo dos jogos.
+                <div class="grupos__lista__item__texto">
+                    <p >A série Kingdom Hearts é conhecida por sua narrativa complexa e por apresentar uma variedade de vilões que desempenham papéis cruciais ao longo dos jogos.
                         <ul>
                             <li>
                                 <b>Xehanort</b> é o principal vilão da saga Dark Seeker, sendo responsável por grande parte dos eventos que ocorrem na série. Ele é um Mestre da Keyblade obcecado pelo equilíbrio entre luz e trevas e busca recriar o universo à sua imagem.
